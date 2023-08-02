@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kienkk.orderapp">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity android:name="com.example.kienkk.orderapp.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.kienkk.orderapp.DangNhapActivity"/>
+        <activity android:name="com.example.kienkk.orderapp.DangKyActivity" />
+        <activity android:name="com.example.kienkk.orderapp.TrangChuActicity" />
+        <activity android:name="com.example.kienkk.orderapp.ThemThucDonActivity" />
+
+        <activity
+            android:name="com.example.kienkk.orderapp.ThemLoaiThucDonActivity"
+            android:label="@string/loaithucdon"
+            android:theme="@style/PopUpActivity">
+        </activity>
+        <activity
+            android:name="com.example.kienkk.orderapp.ThemBanAnActivity"
+            android:label="@string/thembanan"
+            android:theme="@style/PopUpActivity">
+        </activity>
+        <activity
+            android:name="com.example.kienkk.orderapp.SoLuongActivity"
+            android:label="@string/soluong"
+            android:theme="@style/PopUpActivity">
+        </activity>
+        <activity android:name="com.example.kienkk.orderapp.ThanhToanActivity" />
+        <activity
+            android:name="com.example.kienkk.orderapp.SuaBanAnActivity"
+            android:label="@string/sua"
+            android:theme="@style/PopUpActivity">
+        </activity>
+    </application>
+
+</manifest>
